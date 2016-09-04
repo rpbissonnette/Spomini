@@ -1,0 +1,130 @@
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always; }
+}
+
+body {
+        background-image: url("old-paper.jpg");
+}
+
+
+#heading h1, h2 { display: inline; }
+
+    #left {float: left;  width: %20; /* width is optional */}
+    #content {overflow: hidden; float: right; }
+
+
+    h4 {
+    	text-align: center;
+      color: #ff9933;
+			font-size: 1.3em;
+      font-family: "Lucida Blackletter";
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+
+    }
+
+    h3 {
+    	text-align: center;
+      font-family: "Lucida";
+			font-size: 1.5em;
+    	#font-family: fantasy;
+      color: #ff9933;  red = #ea503f;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+    	#border:solid red 1px;
+    }
+
+h2 {
+  color: #ff9933;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Lucida Calligraphy";
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+
+h1 {
+  font-family: "Lucida Blackletter";
+  font-weight:bold;;
+	color: #ff9933;
+	font-size: 2em;
+  padding-top: 0.2em; padding-bottom: 0.3em; padding-left: 0.5em;
+  #width=100%;
+  margin-top: 0; margin-bottom: 0;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+
+.content {
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    #width: 400px;
+    #height: 200px;
+    #padding: 20px;
+    #background-color: #DDD;
+}
+.box1 {
+    #background-color: #FFCCCC;
+    padding: 10px;
+}
+.box2 {
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    text-align: center;
+}
+.box3 {
+    #background-color: #CCCCFF;
+		margin-right: 10px;
+    padding: 10px;
+
+  }
+
+
+div.parent{
+    #border:solid black 1px;
+    display:table;
+    padding:15px;
+    width:98%;
+    margin:5px 0; /* you can change/remove margin */
+		page-break-inside: avoid;
+		-webkit-region-break-inside: avoid;
+}
+div.text{
+    vertical-align:middle;
+    display:table-cell;
+    text-align:left; #justify;
+    width:80%;#400px;
+    font-size: 1.3em;
+    #background-color: #d7d7c1; #hsl(120, 100%, 95%);
+    #border:solid black 1px;
+    margin-right: 50px;
+    font-family:"Lucida Handwriting";
+
+}
+div.parent .img{
+    vertical-align:middle;
+    display:table-cell;
+    padding-right:5px;
+    width:20%;#0px; /* you can change width */
+    height:20px;
+    #border:solid green 4px;
+    #background-color: #d7d7c1;
+}
+div.img img{
+    width:90%;
+    #height:50px; /* you can change height */
+    vertical-align:middle;
+    #border:solid blue 1px;
+}
